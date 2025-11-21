@@ -1,0 +1,18 @@
+## devTinder-UI setup
+- react + vite setup
+    - npm create vite@latest devTinder-UI -- --template react
+    - npm run dev - to start the application
+- install tailwindCSS
+    - npm install tailwindcss @tailwindcss/vite
+- install daisyUI
+    - npm i -D daisyui@latest
+    - use components (navbar, card, input etc,.)
+- install react router
+    - npm i react-router-dom
+    - setup routing
+- Login
+    - state management - useState
+    - axios for making api call to login
+    - error handling
+    - fix CORS
+    - once login success navigate user to feed page - useNavigate
