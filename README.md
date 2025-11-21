@@ -51,4 +51,10 @@
     - Accept/Reject functionality
         - make an API call to review the request
         - once it is accepted/reject remove it from the requests.
+- Connections
+    - Make API call to get all the connections 
+- Logout API
+    - Make API call to expire the token
+    - Remove the user from the store
+    - navigate the user to login page
 
