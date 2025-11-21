@@ -46,3 +46,9 @@
     - Interested / Ignored functionality
         - Make an api call to send interested or ignored
         - Once sent, remove the user from the feed
+- Requests
+    - Make an API call to get all the pending requests that needs to be approved
+    - Accept/Reject functionality
+        - make an API call to review the request
+        - once it is accepted/reject remove it from the requests.
+

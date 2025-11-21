@@ -4,7 +4,7 @@ import { Outlet, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import {BASE_URL} from '../utils/constants'
 import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'                                                                                                     
 import { addUser } from '../utils/userSlice'
 
 const Body = () => {
