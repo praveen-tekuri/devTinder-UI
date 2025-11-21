@@ -16,3 +16,33 @@
     - error handling
     - fix CORS
     - once login success navigate user to feed page - useNavigate
+## Redux-toolkit 
+- instal redux Toolkit & react-redux packages
+    - npm install @reduxjs/toolkit 
+    - npm install react-redux (for react bindings)
+- configuration
+    - configureStore
+    - Provider
+    - createSlice
+- Login
+    - add loggedIn user data to the store
+        - dispatch action
+            - useDispatch
+- Navbar
+    - read the data from the store
+        - useSelector
+    - show the user details only if the user exists
+- Body | Verify the token
+    - BASE_URL 
+    - every time Body component loads, fetch the user from the API add to the store.
+    - if the user already there in the store, don't make an API call again.
+    - if the token expires or not exists, redirect the user to login
+- Feed API
+    - Make api request to feed
+    - Add the feed data to the store
+    - Get the data from the store 
+    - UserCard component
+        - to display the user with details
+    - Interested / Ignored functionality
+        - Make an api call to send interested or ignored
+        - Once sent, remove the user from the feed
