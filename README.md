@@ -57,4 +57,9 @@
     - Make API call to expire the token
     - Remove the user from the store
     - navigate the user to login page
-
+- SignUp API
+    - Use Login component & toggle between loggedIn and SignUp
+    - Make an API call to signUp the user
+- Profile API
+    - Display the profile page with default values and allow user to edit allowed fields.
+    - Display the user card aside, to show how it will be visible, after updating.
