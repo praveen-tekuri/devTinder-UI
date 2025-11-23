@@ -6,10 +6,10 @@ import { addFeed } from '../utils/feedSlice'
 import UserCard from './UserCard'
 
 const Feed = () => {
-  const dispatch = useDispatch();
   const users = useSelector((store) => store.feed);
+  const dispatch = useDispatch();
   const fetchFeed = async () => {
-    if(users) return;
+    // if(users) return;
     try {
       const res = await axios.get(BASE_URL + "/feed", {withCredentials: true})
       dispatch(addFeed(res?.data?.users))
@@ -21,7 +21,8 @@ const Feed = () => {
       fetchFeed()
   },[])
 
-  if(users?.length === 0) return <h1 className='text-center font-bold py-5'>You don't have new users today</h1>
+  if(!users) return
+  if(users?.length<= 0) return <h1 className='text-center font-bold py-5'>You don't have new users today</h1>
   return (
     <div>
       {users && <UserCard user = {users[0]} />}

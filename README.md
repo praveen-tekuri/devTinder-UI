@@ -63,3 +63,4 @@
 - Profile API
     - Display the profile page with default values and allow user to edit allowed fields.
     - Display the user card aside, to show how it will be visible, after updating.
+- Code Refactoring & BUG fixes
