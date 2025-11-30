@@ -17,7 +17,7 @@ const Login = () => {
   const dispatch = useDispatch();
   const fetchUser = async () => {
     try {
-        const res = await axios.post("http://localhost:7780/login", {emailId, password}, {withCredentials: true});
+        const res = await axios.post(BASE_URL + "/login", {emailId, password}, {withCredentials: true});
         dispatch(addUser(res?.data?.data));
         return navigate("/");     
     } catch (error) {
